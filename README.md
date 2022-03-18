@@ -2,8 +2,9 @@
 LeetCode
 ========
 
-## LeetCode Algorithm
+### LeetCode Algorithm
 
-The Solutions are divided into different sheets for revision
+| # | Title | Solution | Difficulty |
+|---| ----- | -------- | ---------- |
+|1|[Two Sum](https://leetcode.com/problems/two-sum/)| [C++](./algorithms/cpp/twoSum/twoSum.cpp), [Go](./algorithms/golang/twoSum/twoSum.go)|Easy|
 
-### [Sheet 1](https://leetcode.com/list?selectedList=942ay8ye)
