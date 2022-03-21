@@ -5,6 +5,7 @@ class Solution {
 public:
     vector<vector<int>> fourSum(vector<int>& num, int target) {
         sort(num.begin(),num.end());
+        // for removing duplicates
         set<vector<int>> ans;
     
         for (int i = 0; i < num.size(); i++) {
