@@ -24,3 +24,18 @@ public:
         return lcs[n][m];    
     }
 };
+
+/* Printing Longest Common Subsequence
+    int i = m, j = n;
+    string lcs = "";
+    while(i > 0 && j > 0) {
+        if (text1[i-1] == text2[j-1]) {
+            lcs += text1[i-1];
+            i--;
+            j--;
+        }
+        else if (t[i][j-1] > t[i-1][j]) j--;
+        else i--;
+    }
+    return reverse(lcs.begin(),lcs.end());
+*/

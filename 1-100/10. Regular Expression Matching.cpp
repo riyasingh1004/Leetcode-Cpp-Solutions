@@ -5,7 +5,7 @@
 //3. If p[j] == '*': 
 //    here are two sub conditions:
 //                1   if p[j-1] != s[i] : dp[i][j] = dp[i][j-2]  //in this case, a* only counts as empty
-//                2   if p[i-1] == s[i] or p[i-1] == '.':
+//                2   if p[j-1] == s[i] or p[j-1] == '.':
 //                               dp[i][j] = dp[i-1][j]    //in this case, a* counts as multiple a 
 //                            or dp[i][j] = dp[i][j-1]   // in this case, a* counts as single a
 //                            or dp[i][j] = dp[i][j-2]   // in this case, a* counts as empty
@@ -14,9 +14,9 @@ class Solution {
 public:
     bool isMatch(string s, string p) {
         
-        if (s.empty() || p.empty()) {
+        if (s.empty() || p.empty()) 
         return false;
-    }
+    
     
     vector<vector<bool>> dp(s.length() + 1, vector<bool>(p.length() + 1, false));
     dp[0][0] = true;
