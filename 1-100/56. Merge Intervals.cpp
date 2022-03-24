@@ -9,12 +9,11 @@ public:
         
         for (auto interval : intervals) {
             
-            if (merged.empty() || merged.back()[1] < interval[0]) {
+            // merged is empty or the interval is non overlapping
+            if (merged.empty() || merged.back()[1] < interval[0]) 
                 merged.push_back(interval);
-            }
             else
                 merged.back()[1] = max(merged.back()[1], interval[1]);
-            
         }
         
         return merged;
