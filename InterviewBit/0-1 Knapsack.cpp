@@ -1,4 +1,7 @@
-/* In the following recursion tree, K() refers 
+//Time Complexity: O(N*W). 
+//where ‘N’ is the number of weight element and ‘W’ is capacity. 
+
+/*In the following recursion tree, K() refers 
 to knapSack(). The two parameters indicated in the
 following recursion tree are n and W.
 The recursion tree is for following sample inputs.
@@ -14,13 +17,8 @@ wt[] = {1, 1, 1}, W = 2, val[] = {10, 20, 30}
        /  \         /   \              /        \
      /      \     /       \          /            \
 K(0, 2)  K(0, 1)  K(0, 1)  K(0, 0)  K(0, 1)   K(0, 0)
-Time complexity of recusive method is O(2^n)
-Optimal Sub-structure: To consider all subsets of items, there can be two cases for every item. 
-Case 1: The item is included in the optimal subset.
-Case 2: The item is not included in the optimal set.
-Time Complexity: O(N*W). 
-where ‘N’ is the number of weight element and ‘W’ is capacity. 
-*/
+Time Complexity of recursion is 2^n*/
+
 
 int Solution::solve(vector<int> &A, vector<int> &B, int C) {
 
