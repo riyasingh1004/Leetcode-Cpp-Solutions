@@ -2,7 +2,7 @@
 LeetCode
 ========
 
-### LeetCode Algorithm Solutions 
+### LeetCode Solutions 
 
 1. Solutions to 1000+ Leetcode Questions.
 2. Solution in : C++
